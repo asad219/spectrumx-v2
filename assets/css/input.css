@@ -348,6 +348,19 @@
     filter: drop-shadow(0 0 18px rgba(34, 211, 238, 0.35));
   }
 
+  /* SVG icon tinted with the same cyan → blue heading gradient */
+  .hero-icon-gradient {
+    display: block;
+    background-image: linear-gradient(90deg, #67e8f9 0%, #22d3ee 50%, #3b82f6 100%);
+    filter: drop-shadow(0 0 28px rgba(34, 211, 238, 0.35));
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+
   .btn-hero-primary {
     @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:opacity-90;
   }
@@ -375,6 +388,10 @@
   /* Shared inner-page hero height (home uses .hero-panel instead) */
   .page-hero-inner {
     @apply relative flex min-h-[28rem] flex-col items-start justify-center py-20 sm:min-h-[30rem] sm:py-24 lg:min-h-[32rem] lg:py-28;
+  }
+
+  .page-hero-heading-row {
+    @apply w-full;
   }
 
   /* Hero banner art — full opacity (sharp); dim via gradient overlays only */
