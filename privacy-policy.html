@@ -32,10 +32,11 @@
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" sizes="180x180" />
   <link rel="shortcut icon" href="assets/images/favicon.ico" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/css/style.css?v=20260810" as="style" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260810" />
+  
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,7 +92,10 @@
 
 <section class="relative overflow-hidden border-b border-white/5 bg-[#080B11] text-white">
   <div class="absolute inset-0 bg-[#080B11]">
-    <img src="assets/images/spectrum-x-bg.jpg" alt="SpectrumX Technologies digital solutions background" width="1920" height="512" class="page-hero-bg" loading="eager" fetchpriority="high" />
+    <picture class="page-hero-picture">
+      <source type="image/webp" srcset="assets/images/spectrum-x-bg.webp" />
+      <img src="assets/images/spectrum-x-bg.jpg" alt="SpectrumX Technologies digital solutions background" width="1920" height="512" class="page-hero-bg" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
     <div class="absolute inset-0 bg-gradient-to-r from-[#080B11]/90 via-[#080B11]/55 to-transparent lg:from-[#080B11]/75 lg:via-[#080B11]/40"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/30 via-transparent to-[#080B11]/90"></div>
   </div>
@@ -185,7 +189,7 @@
 </section>
 </main>
   <div id="footer-placeholder"></div>
-  <script src="assets/js/components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/components.js?v=20260810" defer></script>
+  <script src="assets/js/main.js?v=20260810" defer></script>
 </body>
 </html>

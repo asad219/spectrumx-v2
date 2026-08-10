@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search Engine Optimization | SpectrumX SEO</title>
+  <title>Search Engine Optimization | SpectrumX Technologies</title>
   <meta name="description" content="Improve rankings and organic traffic with SpectrumX SEO — technical optimization, content strategy, and reporting." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://spectrumx.ltd/solutions/search-engine-optimization-seo" />
@@ -11,14 +11,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SpectrumX Technologies" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Search Engine Optimization | SpectrumX SEO" />
+  <meta property="og:title" content="Search Engine Optimization | SpectrumX Technologies" />
   <meta property="og:description" content="Improve rankings and organic traffic with SpectrumX SEO — technical optimization, content strategy, and reporting." />
   <meta property="og:url" content="https://spectrumx.ltd/solutions/search-engine-optimization-seo" />
   <meta property="og:image" content="https://spectrumx.ltd/assets/images/og-image.jpg" />
-  <meta property="og:image:alt" content="Search Engine Optimization | SpectrumX SEO" />
+  <meta property="og:image:alt" content="Search Engine Optimization | SpectrumX Technologies" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Search Engine Optimization | SpectrumX SEO" />
+  <meta name="twitter:title" content="Search Engine Optimization | SpectrumX Technologies" />
   <meta name="twitter:description" content="Improve rankings and organic traffic with SpectrumX SEO — technical optimization, content strategy, and reporting." />
   <meta name="twitter:image" content="https://spectrumx.ltd/assets/images/og-image.jpg" />
 
@@ -32,17 +32,18 @@
   <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" sizes="180x180" />
   <link rel="shortcut icon" href="../assets/images/favicon.ico" />
   <link rel="manifest" href="../site.webmanifest" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preload" href="../assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/css/style.css?v=20260810" as="style" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260810" />
+  <link rel="preload" as="image" href="../assets/images/spectrum-x-bg.webp" type="image/webp" fetchpriority="high" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": "https://spectrumx.ltd/solutions/search-engine-optimization-seo#webpage",
   "url": "https://spectrumx.ltd/solutions/search-engine-optimization-seo",
-  "name": "Search Engine Optimization | SpectrumX SEO",
+  "name": "Search Engine Optimization | SpectrumX Technologies",
   "description": "Improve rankings and organic traffic with SpectrumX SEO — technical optimization, content strategy, and reporting.",
   "isPartOf": {
     "@id": "https://spectrumx.ltd/#website"
@@ -111,7 +112,10 @@
 
 <section class="relative overflow-hidden border-b border-white/5 bg-[#080B11] text-white">
   <div class="absolute inset-0 bg-[#080B11]">
-    <img src="../assets/images/spectrum-x-bg.jpg" alt="SpectrumX Technologies digital solutions background" width="1920" height="512" class="page-hero-bg" loading="eager" fetchpriority="high" />
+    <picture class="page-hero-picture">
+      <source type="image/webp" srcset="../assets/images/spectrum-x-bg.webp" />
+      <img src="../assets/images/spectrum-x-bg.jpg" alt="SpectrumX Technologies digital solutions background" width="1920" height="512" class="page-hero-bg" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
     <div class="absolute inset-0 bg-gradient-to-r from-[#080B11]/90 via-[#080B11]/55 to-transparent lg:from-[#080B11]/75 lg:via-[#080B11]/40"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/30 via-transparent to-[#080B11]/90"></div>
   </div>
@@ -287,7 +291,7 @@
 </section>
 </main>
   <div id="footer-placeholder"></div>
-  <script src="../assets/js/components.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/components.js?v=20260810" defer></script>
+  <script src="../assets/js/main.js?v=20260810" defer></script>
 </body>
 </html>

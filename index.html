@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SpectrumX | Web, Mobile &amp; Digital Growth Solutions</title>
+  <title>SpectrumX Technologies | Web, Mobile &amp; Digital Growth Solutions</title>
   <meta name="description" content="SpectrumX delivers web apps, mobile development, eCommerce, SEO, and digital marketing for growing businesses worldwide." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://spectrumx.ltd/" />
@@ -11,14 +11,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SpectrumX Technologies" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="SpectrumX | Web, Mobile &amp; Digital Growth Solutions" />
+  <meta property="og:title" content="SpectrumX Technologies | Web, Mobile &amp; Digital Growth Solutions" />
   <meta property="og:description" content="SpectrumX delivers web apps, mobile development, eCommerce, SEO, and digital marketing for growing businesses worldwide." />
   <meta property="og:url" content="https://spectrumx.ltd/" />
   <meta property="og:image" content="https://spectrumx.ltd/assets/images/og-image.jpg" />
-  <meta property="og:image:alt" content="SpectrumX | Web, Mobile &amp; Digital Growth Solutions" />
+  <meta property="og:image:alt" content="SpectrumX Technologies | Web, Mobile &amp; Digital Growth Solutions" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SpectrumX | Web, Mobile &amp; Digital Growth Solutions" />
+  <meta name="twitter:title" content="SpectrumX Technologies | Web, Mobile &amp; Digital Growth Solutions" />
   <meta name="twitter:description" content="SpectrumX delivers web apps, mobile development, eCommerce, SEO, and digital marketing for growing businesses worldwide." />
   <meta name="twitter:image" content="https://spectrumx.ltd/assets/images/og-image.jpg" />
 
@@ -32,17 +32,18 @@
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" sizes="180x180" />
   <link rel="shortcut icon" href="assets/images/favicon.ico" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/css/style.css?v=20260810" as="style" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260810" />
+  <link rel="preload" as="image" href="assets/images/6481666_924.webp" type="image/webp" fetchpriority="high" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": "https://spectrumx.ltd#webpage",
   "url": "https://spectrumx.ltd/",
-  "name": "SpectrumX | Web, Mobile & Digital Growth Solutions",
+  "name": "SpectrumX Technologies | Web, Mobile & Digital Growth Solutions",
   "description": "SpectrumX delivers web apps, mobile development, eCommerce, SEO, and digital marketing for growing businesses worldwide.",
   "isPartOf": {
     "@id": "https://spectrumx.ltd/#website"
@@ -128,7 +129,10 @@
 
 <section class="hero-panel">
   <div class="absolute inset-0">
-    <img src="assets/images/6481666_924.jpg" alt="SpectrumX Technologies digital product workspace" width="2000" height="800" class="h-full w-full object-cover opacity-45" style="object-position: center 40%" loading="eager" fetchpriority="high" />
+    <picture class="absolute inset-0 block h-full w-full">
+      <source type="image/webp" srcset="assets/images/6481666_924.webp" />
+      <img src="assets/images/6481666_924.jpg" alt="SpectrumX Technologies digital product workspace" width="1920" height="1097" class="h-full w-full object-cover opacity-45" style="object-position: center 40%" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
     <div class="absolute inset-0 bg-gradient-to-r from-[#080B11]/92 via-[#080B11]/78 to-[#080B11]/55"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/70 via-[#080B11]/55 to-[#080B11]"></div>
   </div>
@@ -317,28 +321,40 @@
     </div>
     <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
       <a href="case-studies/khadeejahs-com-spectrumx-technologies" class="case-card reveal">
-        <img src="assets/images/case-khadeejahs.jpg" alt="Khadeejahs.com eCommerce case study by SpectrumX" width="640" height="480" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+        <picture>
+          <source type="image/webp" srcset="assets/images/case-khadeejahs.webp" />
+          <img src="assets/images/case-khadeejahs.jpg" alt="Khadeejahs.com eCommerce case study by SpectrumX" width="800" height="533" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async" />
+        </picture>
         <div class="p-5">
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-400">01 · Web Development</p>
           <h3 class="mt-3 font-display text-lg font-semibold text-white">Khadeejahs.com eCommerce platform</h3>
         </div>
       </a>
       <a href="case-studies/h-s-scaffolding-partners-with-spectrumx-to-boost-online-presence-and-customer-engagement" class="case-card reveal" style="transition-delay:60ms">
-        <img src="assets/images/case-hss.jpg" alt="H.S Scaffolding website case study by SpectrumX" width="640" height="480" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+        <picture>
+          <source type="image/webp" srcset="assets/images/case-hss.webp" />
+          <img src="assets/images/case-hss.jpg" alt="H.S Scaffolding website case study by SpectrumX" width="800" height="582" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async" />
+        </picture>
         <div class="p-5">
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-400">02 · Web Development</p>
           <h3 class="mt-3 font-display text-lg font-semibold text-white">H.S Scaffolding Partners with SpectrumX</h3>
         </div>
       </a>
       <a href="case-studies/diadema-travel-tourism-collaborates-with-spectrumx-to-elevate-digital-presence-and-enhance-customer-experience" class="case-card reveal" style="transition-delay:120ms">
-        <img src="assets/images/case-diadema.jpg" alt="Diadema Travel & Tourism digital case study by SpectrumX" width="640" height="480" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+        <picture>
+          <source type="image/webp" srcset="assets/images/case-diadema.webp" />
+          <img src="assets/images/case-diadema.jpg" alt="Diadema Travel & Tourism digital case study by SpectrumX" width="800" height="533" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async" />
+        </picture>
         <div class="p-5">
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-400">03 · Web Development</p>
           <h3 class="mt-3 font-display text-lg font-semibold text-white">Diadema Travel & Tourism Collaborates with SpectrumX</h3>
         </div>
       </a>
       <a href="case-studies/ssg-security-solutions-a-digital-transformation-journey" class="case-card reveal" style="transition-delay:180ms">
-        <img src="assets/images/case-ssg.jpg" alt="SSG Security Solutions digital transformation case study" width="640" height="480" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+        <picture>
+          <source type="image/webp" srcset="assets/images/case-ssg.webp" />
+          <img src="assets/images/case-ssg.jpg" alt="SSG Security Solutions digital transformation case study" width="800" height="533" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async" />
+        </picture>
         <div class="p-5">
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-400">04 · Digital Transformation</p>
           <h3 class="mt-3 font-display text-lg font-semibold text-white">SSG Security Solutions – A Digital Transformation Journey</h3>
@@ -423,7 +439,7 @@
 
 </main>
   <div id="footer-placeholder"></div>
-  <script src="assets/js/components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/components.js?v=20260810" defer></script>
+  <script src="assets/js/main.js?v=20260810" defer></script>
 </body>
 </html>

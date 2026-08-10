@@ -3,6 +3,64 @@
 @tailwind utilities;
 
 @layer base {
+  /* Self-hosted fonts (no Google Fonts 3rd-party / render-block) */
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/manrope-latin-400-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url("../fonts/manrope-latin-500-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("../fonts/manrope-latin-600-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("../fonts/manrope-latin-700-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url("../fonts/plus-jakarta-sans-latin-500-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("../fonts/plus-jakarta-sans-latin-600-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("../fonts/plus-jakarta-sans-latin-700-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+    src: url("../fonts/plus-jakarta-sans-latin-800-normal.woff2") format("woff2");
+  }
+
   html {
     scroll-behavior: smooth;
     /* Prevent horizontal layout shift when scrollbar appears/disappears between pages */
