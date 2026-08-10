@@ -377,10 +377,10 @@
     @apply relative flex min-h-[28rem] flex-col items-start justify-center py-20 sm:min-h-[30rem] sm:py-24 lg:min-h-[32rem] lg:py-28;
   }
 
-  /* Hero banner art — keep subject centered across breakpoints */
+  /* Hero banner art — full opacity (sharp); dim via gradient overlays only */
   .page-hero-bg {
-    @apply h-full w-full object-cover opacity-70;
-    object-position: center center;
+    @apply h-full w-full object-cover;
+    object-position: right center;
   }
 
   /* <picture> wrapper must fill the hero so object-cover works */
