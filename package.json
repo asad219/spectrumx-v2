@@ -1,0 +1,15 @@
+{
+  "name": "spectrumx",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SpectrumX Technologies — static HTML + Tailwind redesign",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "generate:pages": "python3 scripts/generate-pages.py",
+    "build": "npm run generate:pages && npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

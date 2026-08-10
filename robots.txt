@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block tooling / source paths
+Disallow: /scripts/
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tailwind.config.js
+Disallow: /assets/css/input.css
+
+Sitemap: https://spectrumx.ltd/sitemap.xml
