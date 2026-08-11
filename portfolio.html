@@ -34,8 +34,8 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/css/style.css?v=20260811" as="style" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260811" />
+  <link rel="preload" href="assets/css/style.css?v=20260811c" as="style" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260811c" />
   
   <script type="application/ld+json">
 {
@@ -129,12 +129,19 @@
       <div id="portfolio-filters" class="portfolio-filters" role="toolbar" aria-label="Filter portfolio by category"></div>
     </div>
 
-    <div id="portfolio-loading" class="portfolio-loading" aria-live="polite">
-      <div class="portfolio-loading-pulse" aria-hidden="true"></div>
-      <p class="mt-4 text-sm text-ink-muted">Loading gallery…</p>
+    <div id="portfolio-loading" class="portfolio-gallery" aria-live="polite" aria-busy="true">
+      <div class="portfolio-skel" style="height:22rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:17rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:20rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:18rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:23rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:16rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:21rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:19rem" aria-hidden="true"></div>
+      <div class="portfolio-skel" style="height:18rem" aria-hidden="true"></div>
     </div>
 
-    <div id="portfolio-gallery" class="portfolio-gallery" aria-live="polite"></div>
+    <div id="portfolio-gallery" class="portfolio-gallery hidden" aria-live="polite"></div>
 
     <div id="portfolio-empty" class="portfolio-empty hidden" role="status">
       <p class="font-display text-xl font-semibold text-white">No projects in this category</p>
@@ -155,7 +162,10 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
   </button>
   <figure class="portfolio-lb-figure">
-    <img id="portfolio-lb-image" alt="" />
+    <div class="portfolio-lb-frame">
+      <span class="portfolio-lb-shimmer" aria-hidden="true"></span>
+      <img id="portfolio-lb-image" alt="" />
+    </div>
     <figcaption class="portfolio-lb-caption">
       <span id="portfolio-lb-cat" class="portfolio-lb-cat"></span>
       <span id="portfolio-lb-name" class="portfolio-lb-name"></span>
@@ -234,8 +244,8 @@
 
 </main>
   <div id="footer-placeholder"></div>
-  <script src="assets/js/components.js?v=20260811" defer></script>
-  <script src="assets/js/main.js?v=20260811" defer></script>
-  <script src="assets/js/portfolio.js?v=20260811" defer></script>
+  <script src="assets/js/components.js?v=20260811c" defer></script>
+  <script src="assets/js/main.js?v=20260811c" defer></script>
+  <script src="assets/js/portfolio.js?v=20260811c" defer></script>
 </body>
 </html>

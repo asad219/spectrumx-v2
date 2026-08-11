@@ -116,7 +116,13 @@
       btn.classList.toggle('is-active', active);
       btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
-    renderGallery();
+    els.gallery.classList.add('is-swapping');
+    window.setTimeout(function () {
+      renderGallery();
+      requestAnimationFrame(function () {
+        els.gallery.classList.remove('is-swapping');
+      });
+    }, 180);
   }
 
   function currentItems() {
@@ -139,22 +145,29 @@
     }
 
     els.empty.classList.add('hidden');
+    els.gallery.classList.remove('hidden');
     els.gallery.innerHTML = state.filtered
       .map(function (item, i) {
+        var eager = i < 6;
         return (
           '<article class="portfolio-card reveal" style="transition-delay:' +
-          Math.min(i * 40, 280) +
+          Math.min(i * 45, 320) +
           'ms">' +
           '<button type="button" class="portfolio-card-hit" data-index="' +
           i +
           '" aria-label="View ' +
           escapeHtml(item.alt) +
           '">' +
+          '<span class="portfolio-card-shimmer" aria-hidden="true"></span>' +
           '<img src="' +
           escapeHtml(item.src) +
           '" alt="' +
           escapeHtml(item.alt) +
-          '" loading="lazy" decoding="async" />' +
+          '" loading="' +
+          (eager ? 'eager' : 'lazy') +
+          '"' +
+          (eager ? ' fetchpriority="high"' : '') +
+          ' decoding="async" />' +
           '<span class="portfolio-card-shade" aria-hidden="true"></span>' +
           '<span class="portfolio-card-meta">' +
           '<span class="portfolio-card-cat">' +
@@ -171,6 +184,7 @@
       .join('');
 
     els.gallery.querySelectorAll('.portfolio-card-hit').forEach(function (btn) {
+      bindCardImage(btn);
       btn.addEventListener('click', function () {
         openLightbox(Number(btn.getAttribute('data-index')));
       });
@@ -179,11 +193,28 @@
     observeReveal(els.gallery.querySelectorAll('.reveal'));
   }
 
+  function bindCardImage(hit) {
+    var img = hit.querySelector('img');
+    if (!img) return;
+
+    function markLoaded() {
+      hit.classList.add('is-loaded');
+    }
+
+    if (img.complete && img.naturalWidth) {
+      requestAnimationFrame(markLoaded);
+      return;
+    }
+
+    img.addEventListener('load', markLoaded, { once: true });
+    img.addEventListener('error', markLoaded, { once: true });
+  }
+
   function openLightbox(index) {
     if (!state.filtered.length) return;
     state.index = ((index % state.filtered.length) + state.filtered.length) % state.filtered.length;
     var item = state.filtered[state.index];
-    els.lbImage.src = item.src;
+    els.lightbox.classList.remove('is-ready');
     els.lbImage.alt = item.alt;
     els.lbCat.textContent = item.categoryLabel;
     els.lbName.textContent = item.title || prettyTitle(item.name);
@@ -191,11 +222,22 @@
     els.lightbox.classList.add('is-open');
     els.lightbox.setAttribute('aria-hidden', 'false');
     document.documentElement.classList.add('portfolio-lightbox-open');
+
+    function ready() {
+      els.lightbox.classList.add('is-ready');
+    }
+
+    els.lbImage.onload = ready;
+    els.lbImage.onerror = ready;
+    els.lbImage.src = item.src;
+    if (els.lbImage.complete && els.lbImage.naturalWidth) {
+      ready();
+    }
     els.lbClose.focus();
   }
 
   function closeLightbox() {
-    els.lightbox.classList.remove('is-open');
+    els.lightbox.classList.remove('is-open', 'is-ready');
     els.lightbox.setAttribute('aria-hidden', 'true');
     document.documentElement.classList.remove('portfolio-lightbox-open');
     els.lbImage.removeAttribute('src');
@@ -229,7 +271,8 @@
   }
 
   function showError(message) {
-    els.loading.classList.add('hidden');
+    if (els.loading) els.loading.classList.add('hidden');
+    if (els.gallery) els.gallery.classList.add('hidden');
     els.empty.classList.remove('hidden');
     els.empty.innerHTML =
       '<p class="font-display text-xl font-semibold text-white">Gallery unavailable</p>' +
@@ -259,9 +302,12 @@
 
     try {
       state.data = await loadData();
-      els.loading.classList.add('hidden');
       renderFilters();
       renderGallery();
+      if (els.loading) {
+        els.loading.classList.add('hidden');
+        els.loading.setAttribute('aria-busy', 'false');
+      }
     } catch (err) {
       showError(
         'Add category folders with images under assets/portfolio, then refresh. On static hosts run npm run portfolio.'
