@@ -41,7 +41,7 @@
         (key === 'solutions' && path.indexOf('/solutions') !== -1) ||
         (key === 'careers' && file === 'careers') ||
         (key === 'portfolio' && file === 'portfolio') ||
-        (key === 'blog' && file === 'blog');
+        (key === 'blog' && (file === 'blog' || path.indexOf('/blogs') !== -1));
 
       if (active) link.classList.add('is-active');
     });
