@@ -394,10 +394,10 @@
     @apply w-full;
   }
 
-  /* Hero banner art — full opacity (sharp); dim via gradient overlays only */
+  /* Inner-page hero art — same treatment as About (full-bleed, dimmed) */
   .page-hero-bg {
-    @apply h-full w-full object-cover;
-    object-position: right center;
+    @apply h-full w-full object-cover opacity-40;
+    object-position: center;
   }
 
   /* <picture> wrapper must fill the hero so object-cover works */
@@ -573,6 +573,170 @@
   .whatsapp-float svg {
     @apply h-7 w-7;
   }
+
+  /* Portfolio gallery */
+  .portfolio-toolbar {
+    @apply mb-8 space-y-6 lg:mb-10;
+  }
+
+  .portfolio-filters {
+    @apply flex gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none];
+  }
+
+  .portfolio-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .portfolio-filter {
+    @apply inline-flex shrink-0 items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm font-medium text-ink-muted transition duration-300 hover:border-cyan-500/30 hover:text-white;
+  }
+
+  .portfolio-filter span {
+    @apply rounded-full bg-white/5 px-1.5 py-0.5 text-[11px] font-semibold text-ink-faint;
+  }
+
+  .portfolio-filter.is-active {
+    @apply border-cyan-400/40 bg-cyan-500/10 text-cyan-200;
+  }
+
+  .portfolio-filter.is-active span {
+    @apply bg-cyan-400/15 text-cyan-300;
+  }
+
+  .portfolio-gallery {
+    column-count: 1;
+    column-gap: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .portfolio-gallery {
+      column-count: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .portfolio-gallery {
+      column-count: 3;
+      column-gap: 1.25rem;
+    }
+  }
+
+  .portfolio-card {
+    @apply mb-4 break-inside-avoid overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] lg:mb-5;
+  }
+
+  .portfolio-card-hit {
+    @apply relative block w-full cursor-zoom-in overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60;
+  }
+
+  .portfolio-card-hit img {
+    @apply block w-full object-cover transition duration-700 ease-soft;
+  }
+
+  .portfolio-card-hit:hover img,
+  .portfolio-card-hit:focus-visible img {
+    @apply scale-[1.04];
+  }
+
+  .portfolio-card-shade {
+    @apply pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 transition duration-500;
+  }
+
+  .portfolio-card-hit:hover .portfolio-card-shade,
+  .portfolio-card-hit:focus-visible .portfolio-card-shade {
+    @apply opacity-100;
+  }
+
+  .portfolio-card-meta {
+    @apply pointer-events-none absolute inset-x-0 bottom-0 flex flex-col gap-1 p-4 translate-y-1 opacity-95 transition duration-500;
+  }
+
+  .portfolio-card-hit:hover .portfolio-card-meta,
+  .portfolio-card-hit:focus-visible .portfolio-card-meta {
+    @apply translate-y-0 opacity-100;
+  }
+
+  .portfolio-card-cat {
+    @apply text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan-300;
+  }
+
+  .portfolio-card-name {
+    @apply font-display text-base font-semibold text-white;
+  }
+
+  .portfolio-loading {
+    @apply flex flex-col items-center justify-center py-24 text-center;
+  }
+
+  .portfolio-loading-pulse {
+    @apply h-12 w-12 rounded-full border border-cyan-400/30 border-t-cyan-300 animate-spin;
+  }
+
+  .portfolio-empty {
+    @apply rounded-2xl border border-dashed border-white/10 bg-white/[0.02] px-6 py-16 text-center;
+  }
+
+  .portfolio-lightbox {
+    @apply fixed inset-0 z-[80] flex items-center justify-center p-4 opacity-0 pointer-events-none transition duration-300 sm:p-8;
+  }
+
+  .portfolio-lightbox.is-open {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  .portfolio-lb-backdrop {
+    @apply absolute inset-0 bg-black/85 backdrop-blur-md;
+  }
+
+  .portfolio-lb-figure {
+    @apply relative z-10 m-0 flex max-h-[min(88vh,920px)] w-full max-w-6xl flex-col;
+  }
+
+  .portfolio-lb-figure img {
+    @apply mx-auto max-h-[min(78vh,820px)] w-auto max-w-full rounded-xl object-contain shadow-2xl;
+  }
+
+  .portfolio-lb-caption {
+    @apply mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink-muted;
+  }
+
+  .portfolio-lb-cat {
+    @apply text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan-300;
+  }
+
+  .portfolio-lb-name {
+    @apply font-display text-base font-semibold text-white;
+  }
+
+  .portfolio-lb-counter {
+    @apply ml-auto text-xs text-ink-faint;
+  }
+
+  .portfolio-lb-close,
+  .portfolio-lb-nav {
+    @apply absolute z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-cyan-400/40 hover:bg-cyan-500/10 hover:text-cyan-200;
+  }
+
+  .portfolio-lb-close svg,
+  .portfolio-lb-nav svg {
+    @apply h-5 w-5;
+  }
+
+  .portfolio-lb-close {
+    @apply right-4 top-4 sm:right-6 sm:top-6;
+  }
+
+  .portfolio-lb-prev {
+    @apply left-3 top-1/2 -translate-y-1/2 sm:left-6;
+  }
+
+  .portfolio-lb-next {
+    @apply right-3 top-1/2 -translate-y-1/2 sm:right-6;
+  }
+}
+
+html.portfolio-lightbox-open {
+  overflow: hidden;
 }
 
 @layer utilities {

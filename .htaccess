@@ -39,7 +39,12 @@ Options -MultiViews
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^(.+?)/?$ $1.html [L]
 
-  DirectoryIndex index.html
+  # Clean API: /api/portfolio -> api/portfolio.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^(.+?)/?$ $1.php [L]
+
+  DirectoryIndex index.html index.php
 </IfModule>
 
 # Gzip compression

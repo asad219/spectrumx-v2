@@ -34,8 +34,9 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/css/style.css?v=20260810" as="style" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260810" />
+  <link rel="preload" href="assets/css/style.css?v=20260811" as="style" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260811" />
+  <link rel="preload" as="image" href="assets/images/spectrum-x-bg.webp" type="image/webp" fetchpriority="high" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,35 +85,34 @@
 <body class="min-h-screen flex flex-col" data-active="about">
   <div id="header-placeholder" class="sticky top-0 z-50"></div>
   <main class="flex-1">
-
 <!-- ========================================
-     SECTION: About hero
-     NOTE: About page top banner + primary CTAs
+     SECTION: Page hero
+     NOTE: Top banner — title, lead, optional CTAs
      ======================================== -->
 
 <section class="relative overflow-hidden border-b border-white/5 bg-[#080B11] text-white">
-  <div class="absolute inset-0 bg-[#080B11]">
-    <div class="absolute inset-0 bg-gradient-to-r from-[#080B11]/90 via-[#080B11]/55 to-transparent lg:from-[#080B11]/75 lg:via-[#080B11]/40"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/30 via-transparent to-[#080B11]/90"></div>
+  <div class="absolute inset-0">
+    <picture class="page-hero-picture">
+      <source type="image/webp" srcset="assets/images/spectrum-x-bg.webp" />
+      <img src="assets/images/spectrum-x-bg.jpg" alt="SpectrumX Technologies digital solutions background" width="1920" height="1200" class="page-hero-bg" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/70 via-[#080B11]/90 to-[#080B11]"></div>
   </div>
   <div class="pointer-events-none absolute -left-20 top-10 h-80 w-80 rounded-full bg-cyan-500/20 blur-3xl"></div>
   <div class="pointer-events-none absolute right-0 bottom-0 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl"></div>
   <div class="site-shell page-hero-inner">
     <span class="hero-badge"><span class="hero-badge-diamond" aria-hidden="true">◆</span> About SpectrumX</span>
-    <div class="page-hero-heading-row mt-7 flex w-full items-center justify-between gap-4 sm:gap-6 lg:gap-10">
-      <h1 class="page-hero-heading min-w-0 flex-1 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
-        Committed to achieving<br />
-        <span class="text-gradient-cyan">exceptional standards</span>
-      </h1>
-      <span class="hero-icon-gradient ml-auto aspect-square w-[4.75rem] shrink-0 sm:w-24 md:w-32 lg:w-40 xl:w-48" style="-webkit-mask-image:url(assets/icons/about.svg);mask-image:url(assets/icons/about.svg)" aria-hidden="true"></span>
-    </div>
+    <h1 class="mt-7 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+      Committed to achieving <span class="text-gradient-cyan">exceptional standards</span>
+    </h1>
     <p class="mt-6 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">We build digital products and growth systems that help businesses compete with clarity—not clutter.</p>
     <div class="mt-10 flex flex-wrap gap-3">
-      <a href="contact" class="btn-hero-primary">Schedule a Free Consultation</a>
-      <a href="careers" class="btn-hero-secondary">Meet the team</a>
-    </div>
+          <a href="contact" class="btn-hero-primary">Schedule a Free Consultation</a>
+          <a href="careers" class="btn-hero-secondary">Meet the team</a>
+        </div>
   </div>
 </section>
+
 
 <!-- ========================================
      SECTION: About stats strip
@@ -126,6 +126,7 @@
     <div class="stat-card reveal text-left !px-6" style="transition-delay:120ms"><p class="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-400/80">Team</p><p class="mt-3 font-display text-3xl font-semibold text-white">20+</p><p class="mt-2 text-sm text-gray-400">Dedicated specialists</p></div>
   </div>
 </section>
+
 
 <!-- ========================================
      SECTION: About story
@@ -158,6 +159,7 @@
   </div>
 </section>
 
+
 <!-- ========================================
      SECTION: About why us
      NOTE: Image + lasting digital advantage copy
@@ -176,6 +178,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ========================================
      SECTION: About core values
@@ -221,6 +224,7 @@
   </div>
 </section>
 
+
 <!-- ========================================
      SECTION: About team + impact
      NOTE: Team CTA card + Our Impact outcomes card
@@ -257,6 +261,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ========================================
      SECTION: About closing CTA
@@ -350,7 +355,7 @@
 
 </main>
   <div id="footer-placeholder"></div>
-  <script src="assets/js/components.js?v=20260810" defer></script>
-  <script src="assets/js/main.js?v=20260810" defer></script>
+  <script src="assets/js/components.js?v=20260811" defer></script>
+  <script src="assets/js/main.js?v=20260811" defer></script>
 </body>
 </html>

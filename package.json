@@ -6,8 +6,9 @@
   "scripts": {
     "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
     "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "portfolio": "python3 scripts/scan-portfolio.py",
     "generate:pages": "python3 scripts/generate-pages.py",
-    "build": "npm run generate:pages && npm run build:css"
+    "build": "npm run portfolio && npm run generate:pages && npm run build:css"
   },
   "devDependencies": {
     "@fontsource/manrope": "^5.3.0",

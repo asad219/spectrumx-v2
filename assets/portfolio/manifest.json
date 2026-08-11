@@ -1,0 +1,849 @@
+{
+  "generatedAt": "2026-08-11T18:49:17.864768+00:00",
+  "categories": [
+    {
+      "id": "cards",
+      "label": "Cards",
+      "count": 2,
+      "items": [
+        {
+          "src": "assets/portfolio/cards/design-to-code-converter.png",
+          "name": "design-to-code-converter.png",
+          "title": "Design To Code Converter",
+          "alt": "Cards — Design To Code Converter",
+          "category": "cards",
+          "categoryLabel": "Cards"
+        },
+        {
+          "src": "assets/portfolio/cards/unlimited-plan-upgrade-card.png",
+          "name": "unlimited-plan-upgrade-card.png",
+          "title": "Unlimited Plan Upgrade Card",
+          "alt": "Cards — Unlimited Plan Upgrade Card",
+          "category": "cards",
+          "categoryLabel": "Cards"
+        }
+      ]
+    },
+    {
+      "id": "dashboards",
+      "label": "Dashboards",
+      "count": 6,
+      "items": [
+        {
+          "src": "assets/portfolio/dashboards/acme-project-management.png",
+          "name": "acme-project-management.png",
+          "title": "Acme Project Management",
+          "alt": "Dashboards — Acme Project Management",
+          "category": "dashboards",
+          "categoryLabel": "Dashboards"
+        },
+        {
+          "src": "assets/portfolio/dashboards/fintech-market-overview.png",
+          "name": "fintech-market-overview.png",
+          "title": "Fintech Market Overview",
+          "alt": "Dashboards — Fintech Market Overview",
+          "category": "dashboards",
+          "categoryLabel": "Dashboards"
+        },
+        {
+          "src": "assets/portfolio/dashboards/flowdesk-productivity.png",
+          "name": "flowdesk-productivity.png",
+          "title": "Flowdesk Productivity",
+          "alt": "Dashboards — Flowdesk Productivity",
+          "category": "dashboards",
+          "categoryLabel": "Dashboards"
+        },
+        {
+          "src": "assets/portfolio/dashboards/luminary-product-dashboard.png",
+          "name": "luminary-product-dashboard.png",
+          "title": "Luminary Product Dashboard",
+          "alt": "Dashboards — Luminary Product Dashboard",
+          "category": "dashboards",
+          "categoryLabel": "Dashboards"
+        },
+        {
+          "src": "assets/portfolio/dashboards/nexus-crypto-trading.png",
+          "name": "nexus-crypto-trading.png",
+          "title": "Nexus Crypto Trading",
+          "alt": "Dashboards — Nexus Crypto Trading",
+          "category": "dashboards",
+          "categoryLabel": "Dashboards"
+        },
+        {
+          "src": "assets/portfolio/dashboards/sentinelops-security.png",
+          "name": "sentinelops-security.png",
+          "title": "Sentinelops Security",
+          "alt": "Dashboards — Sentinelops Security",
+          "category": "dashboards",
+          "categoryLabel": "Dashboards"
+        }
+      ]
+    },
+    {
+      "id": "hero_sections",
+      "label": "Hero Sections",
+      "count": 19,
+      "items": [
+        {
+          "src": "assets/portfolio/hero_sections/aether-horizon-hero.png",
+          "name": "aether-horizon-hero.png",
+          "title": "Aether Horizon Hero",
+          "alt": "Hero Sections — Aether Horizon Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/architekta-architecture-hero.png",
+          "name": "architekta-architecture-hero.png",
+          "title": "Architekta Architecture Hero",
+          "alt": "Hero Sections — Architekta Architecture Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/behind-the-designs-hero.png",
+          "name": "behind-the-designs-hero.png",
+          "title": "Behind The Designs Hero",
+          "alt": "Hero Sections — Behind The Designs Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/cancelpro-cancellation-hero.png",
+          "name": "cancelpro-cancellation-hero.png",
+          "title": "Cancelpro Cancellation Hero",
+          "alt": "Hero Sections — Cancelpro Cancellation Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/clarity-brand-hero.png",
+          "name": "clarity-brand-hero.png",
+          "title": "Clarity Brand Hero",
+          "alt": "Hero Sections — Clarity Brand Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/clearthink-writing-hero.png",
+          "name": "clearthink-writing-hero.png",
+          "title": "Clearthink Writing Hero",
+          "alt": "Hero Sections — Clearthink Writing Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/finvo-money-hero.png",
+          "name": "finvo-money-hero.png",
+          "title": "Finvo Money Hero",
+          "alt": "Hero Sections — Finvo Money Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/forme-mens-fashion-hero.png",
+          "name": "forme-mens-fashion-hero.png",
+          "title": "Forme Mens Fashion Hero",
+          "alt": "Hero Sections — Forme Mens Fashion Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/frameblox-website-builder-hero.png",
+          "name": "frameblox-website-builder-hero.png",
+          "title": "Frameblox Website Builder Hero",
+          "alt": "Hero Sections — Frameblox Website Builder Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/locqube-real-estate-hero.png",
+          "name": "locqube-real-estate-hero.png",
+          "title": "Locqube Real Estate Hero",
+          "alt": "Hero Sections — Locqube Real Estate Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/mediconnect-healthcare-hero.png",
+          "name": "mediconnect-healthcare-hero.png",
+          "title": "Mediconnect Healthcare Hero",
+          "alt": "Hero Sections — Mediconnect Healthcare Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/nexus-engineering-hero.png",
+          "name": "nexus-engineering-hero.png",
+          "title": "Nexus Engineering Hero",
+          "alt": "Hero Sections — Nexus Engineering Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/skyexplorer-flights-hero.png",
+          "name": "skyexplorer-flights-hero.png",
+          "title": "Skyexplorer Flights Hero",
+          "alt": "Hero Sections — Skyexplorer Flights Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/supermi-messaging-hero.png",
+          "name": "supermi-messaging-hero.png",
+          "title": "Supermi Messaging Hero",
+          "alt": "Hero Sections — Supermi Messaging Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/the-reserve-club-hero.png",
+          "name": "the-reserve-club-hero.png",
+          "title": "The Reserve Club Hero",
+          "alt": "Hero Sections — The Reserve Club Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/upfluence-creators-hero.png",
+          "name": "upfluence-creators-hero.png",
+          "title": "Upfluence Creators Hero",
+          "alt": "Hero Sections — Upfluence Creators Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/vanish-support-hero.png",
+          "name": "vanish-support-hero.png",
+          "title": "Vanish Support Hero",
+          "alt": "Hero Sections — Vanish Support Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/vogue-fashion-hero.png",
+          "name": "vogue-fashion-hero.png",
+          "title": "Vogue Fashion Hero",
+          "alt": "Hero Sections — Vogue Fashion Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        },
+        {
+          "src": "assets/portfolio/hero_sections/website-template-hero.png",
+          "name": "website-template-hero.png",
+          "title": "Website Template Hero",
+          "alt": "Hero Sections — Website Template Hero",
+          "category": "hero_sections",
+          "categoryLabel": "Hero Sections"
+        }
+      ]
+    },
+    {
+      "id": "landing_pages",
+      "label": "Landing Pages",
+      "count": 1,
+      "items": [
+        {
+          "src": "assets/portfolio/landing_pages/finpay-fintech-landing.png",
+          "name": "finpay-fintech-landing.png",
+          "title": "Finpay Fintech Landing",
+          "alt": "Landing Pages — Finpay Fintech Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        }
+      ]
+    },
+    {
+      "id": "mobile_apps",
+      "label": "Mobile Apps",
+      "count": 20,
+      "items": [
+        {
+          "src": "assets/portfolio/mobile_apps/banking-spend-tracker.png",
+          "name": "banking-spend-tracker.png",
+          "title": "Banking Spend Tracker",
+          "alt": "Mobile Apps — Banking Spend Tracker",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/bmi-calculator-app.png",
+          "name": "bmi-calculator-app.png",
+          "title": "BMI Calculator App",
+          "alt": "Mobile Apps — BMI Calculator App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/clearvest-investment-app.png",
+          "name": "clearvest-investment-app.png",
+          "title": "Clearvest Investment App",
+          "alt": "Mobile Apps — Clearvest Investment App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/clearvest-portfolio-screens.png",
+          "name": "clearvest-portfolio-screens.png",
+          "title": "Clearvest Portfolio Screens",
+          "alt": "Mobile Apps — Clearvest Portfolio Screens",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/clearvest-stock-details.png",
+          "name": "clearvest-stock-details.png",
+          "title": "Clearvest Stock Details",
+          "alt": "Mobile Apps — Clearvest Stock Details",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/dark-wallet-banking.png",
+          "name": "dark-wallet-banking.png",
+          "title": "Dark Wallet Banking",
+          "alt": "Mobile Apps — Dark Wallet Banking",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/ecommerce-shopping-app.png",
+          "name": "ecommerce-shopping-app.png",
+          "title": "Ecommerce Shopping App",
+          "alt": "Mobile Apps — Ecommerce Shopping App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/elearning-course-app.png",
+          "name": "elearning-course-app.png",
+          "title": "Elearning Course App",
+          "alt": "Mobile Apps — Elearning Course App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/family-donation-app.png",
+          "name": "family-donation-app.png",
+          "title": "Family Donation App",
+          "alt": "Mobile Apps — Family Donation App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/flexfunds-banking-onboarding.png",
+          "name": "flexfunds-banking-onboarding.png",
+          "title": "Flexfunds Banking Onboarding",
+          "alt": "Mobile Apps — Flexfunds Banking Onboarding",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/furniture-catalog-app.png",
+          "name": "furniture-catalog-app.png",
+          "title": "Furniture Catalog App",
+          "alt": "Mobile Apps — Furniture Catalog App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/gift-card-crypto-trading.png",
+          "name": "gift-card-crypto-trading.png",
+          "title": "Gift Card Crypto Trading",
+          "alt": "Mobile Apps — Gift Card Crypto Trading",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/gift-card-trading-dashboard.png",
+          "name": "gift-card-trading-dashboard.png",
+          "title": "Gift Card Trading Dashboard",
+          "alt": "Mobile Apps — Gift Card Trading Dashboard",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/luma-breath-awareness.png",
+          "name": "luma-breath-awareness.png",
+          "title": "Luma Breath Awareness",
+          "alt": "Mobile Apps — Luma Breath Awareness",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/luma-meditation-app.png",
+          "name": "luma-meditation-app.png",
+          "title": "Luma Meditation App",
+          "alt": "Mobile Apps — Luma Meditation App",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/lumiskin-skincare-ai.png",
+          "name": "lumiskin-skincare-ai.png",
+          "title": "Lumiskin Skincare AI",
+          "alt": "Mobile Apps — Lumiskin Skincare AI",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/luxury-furniture-shop.png",
+          "name": "luxury-furniture-shop.png",
+          "title": "Luxury Furniture Shop",
+          "alt": "Mobile Apps — Luxury Furniture Shop",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/musicly-music-player.png",
+          "name": "musicly-music-player.png",
+          "title": "Musicly Music Player",
+          "alt": "Mobile Apps — Musicly Music Player",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/nutrition-calorie-tracker.png",
+          "name": "nutrition-calorie-tracker.png",
+          "title": "Nutrition Calorie Tracker",
+          "alt": "Mobile Apps — Nutrition Calorie Tracker",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        },
+        {
+          "src": "assets/portfolio/mobile_apps/organic-grocery-delivery.png",
+          "name": "organic-grocery-delivery.png",
+          "title": "Organic Grocery Delivery",
+          "alt": "Mobile Apps — Organic Grocery Delivery",
+          "category": "mobile_apps",
+          "categoryLabel": "Mobile Apps"
+        }
+      ]
+    },
+    {
+      "id": "price_plans",
+      "label": "Price Plans",
+      "count": 2,
+      "items": [
+        {
+          "src": "assets/portfolio/price_plans/chainpay-crypto-pricing.png",
+          "name": "chainpay-crypto-pricing.png",
+          "title": "Chainpay Crypto Pricing",
+          "alt": "Price Plans — Chainpay Crypto Pricing",
+          "category": "price_plans",
+          "categoryLabel": "Price Plans"
+        },
+        {
+          "src": "assets/portfolio/price_plans/luminary-saas-pricing.png",
+          "name": "luminary-saas-pricing.png",
+          "title": "Luminary SaaS Pricing",
+          "alt": "Price Plans — Luminary SaaS Pricing",
+          "category": "price_plans",
+          "categoryLabel": "Price Plans"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "src": "assets/portfolio/cards/design-to-code-converter.png",
+      "name": "design-to-code-converter.png",
+      "title": "Design To Code Converter",
+      "alt": "Cards — Design To Code Converter",
+      "category": "cards",
+      "categoryLabel": "Cards"
+    },
+    {
+      "src": "assets/portfolio/cards/unlimited-plan-upgrade-card.png",
+      "name": "unlimited-plan-upgrade-card.png",
+      "title": "Unlimited Plan Upgrade Card",
+      "alt": "Cards — Unlimited Plan Upgrade Card",
+      "category": "cards",
+      "categoryLabel": "Cards"
+    },
+    {
+      "src": "assets/portfolio/dashboards/acme-project-management.png",
+      "name": "acme-project-management.png",
+      "title": "Acme Project Management",
+      "alt": "Dashboards — Acme Project Management",
+      "category": "dashboards",
+      "categoryLabel": "Dashboards"
+    },
+    {
+      "src": "assets/portfolio/dashboards/fintech-market-overview.png",
+      "name": "fintech-market-overview.png",
+      "title": "Fintech Market Overview",
+      "alt": "Dashboards — Fintech Market Overview",
+      "category": "dashboards",
+      "categoryLabel": "Dashboards"
+    },
+    {
+      "src": "assets/portfolio/dashboards/flowdesk-productivity.png",
+      "name": "flowdesk-productivity.png",
+      "title": "Flowdesk Productivity",
+      "alt": "Dashboards — Flowdesk Productivity",
+      "category": "dashboards",
+      "categoryLabel": "Dashboards"
+    },
+    {
+      "src": "assets/portfolio/dashboards/luminary-product-dashboard.png",
+      "name": "luminary-product-dashboard.png",
+      "title": "Luminary Product Dashboard",
+      "alt": "Dashboards — Luminary Product Dashboard",
+      "category": "dashboards",
+      "categoryLabel": "Dashboards"
+    },
+    {
+      "src": "assets/portfolio/dashboards/nexus-crypto-trading.png",
+      "name": "nexus-crypto-trading.png",
+      "title": "Nexus Crypto Trading",
+      "alt": "Dashboards — Nexus Crypto Trading",
+      "category": "dashboards",
+      "categoryLabel": "Dashboards"
+    },
+    {
+      "src": "assets/portfolio/dashboards/sentinelops-security.png",
+      "name": "sentinelops-security.png",
+      "title": "Sentinelops Security",
+      "alt": "Dashboards — Sentinelops Security",
+      "category": "dashboards",
+      "categoryLabel": "Dashboards"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/aether-horizon-hero.png",
+      "name": "aether-horizon-hero.png",
+      "title": "Aether Horizon Hero",
+      "alt": "Hero Sections — Aether Horizon Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/architekta-architecture-hero.png",
+      "name": "architekta-architecture-hero.png",
+      "title": "Architekta Architecture Hero",
+      "alt": "Hero Sections — Architekta Architecture Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/behind-the-designs-hero.png",
+      "name": "behind-the-designs-hero.png",
+      "title": "Behind The Designs Hero",
+      "alt": "Hero Sections — Behind The Designs Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/cancelpro-cancellation-hero.png",
+      "name": "cancelpro-cancellation-hero.png",
+      "title": "Cancelpro Cancellation Hero",
+      "alt": "Hero Sections — Cancelpro Cancellation Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/clarity-brand-hero.png",
+      "name": "clarity-brand-hero.png",
+      "title": "Clarity Brand Hero",
+      "alt": "Hero Sections — Clarity Brand Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/clearthink-writing-hero.png",
+      "name": "clearthink-writing-hero.png",
+      "title": "Clearthink Writing Hero",
+      "alt": "Hero Sections — Clearthink Writing Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/finvo-money-hero.png",
+      "name": "finvo-money-hero.png",
+      "title": "Finvo Money Hero",
+      "alt": "Hero Sections — Finvo Money Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/forme-mens-fashion-hero.png",
+      "name": "forme-mens-fashion-hero.png",
+      "title": "Forme Mens Fashion Hero",
+      "alt": "Hero Sections — Forme Mens Fashion Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/frameblox-website-builder-hero.png",
+      "name": "frameblox-website-builder-hero.png",
+      "title": "Frameblox Website Builder Hero",
+      "alt": "Hero Sections — Frameblox Website Builder Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/locqube-real-estate-hero.png",
+      "name": "locqube-real-estate-hero.png",
+      "title": "Locqube Real Estate Hero",
+      "alt": "Hero Sections — Locqube Real Estate Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/mediconnect-healthcare-hero.png",
+      "name": "mediconnect-healthcare-hero.png",
+      "title": "Mediconnect Healthcare Hero",
+      "alt": "Hero Sections — Mediconnect Healthcare Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/nexus-engineering-hero.png",
+      "name": "nexus-engineering-hero.png",
+      "title": "Nexus Engineering Hero",
+      "alt": "Hero Sections — Nexus Engineering Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/skyexplorer-flights-hero.png",
+      "name": "skyexplorer-flights-hero.png",
+      "title": "Skyexplorer Flights Hero",
+      "alt": "Hero Sections — Skyexplorer Flights Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/supermi-messaging-hero.png",
+      "name": "supermi-messaging-hero.png",
+      "title": "Supermi Messaging Hero",
+      "alt": "Hero Sections — Supermi Messaging Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/the-reserve-club-hero.png",
+      "name": "the-reserve-club-hero.png",
+      "title": "The Reserve Club Hero",
+      "alt": "Hero Sections — The Reserve Club Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/upfluence-creators-hero.png",
+      "name": "upfluence-creators-hero.png",
+      "title": "Upfluence Creators Hero",
+      "alt": "Hero Sections — Upfluence Creators Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/vanish-support-hero.png",
+      "name": "vanish-support-hero.png",
+      "title": "Vanish Support Hero",
+      "alt": "Hero Sections — Vanish Support Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/vogue-fashion-hero.png",
+      "name": "vogue-fashion-hero.png",
+      "title": "Vogue Fashion Hero",
+      "alt": "Hero Sections — Vogue Fashion Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/hero_sections/website-template-hero.png",
+      "name": "website-template-hero.png",
+      "title": "Website Template Hero",
+      "alt": "Hero Sections — Website Template Hero",
+      "category": "hero_sections",
+      "categoryLabel": "Hero Sections"
+    },
+    {
+      "src": "assets/portfolio/landing_pages/finpay-fintech-landing.png",
+      "name": "finpay-fintech-landing.png",
+      "title": "Finpay Fintech Landing",
+      "alt": "Landing Pages — Finpay Fintech Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/banking-spend-tracker.png",
+      "name": "banking-spend-tracker.png",
+      "title": "Banking Spend Tracker",
+      "alt": "Mobile Apps — Banking Spend Tracker",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/bmi-calculator-app.png",
+      "name": "bmi-calculator-app.png",
+      "title": "BMI Calculator App",
+      "alt": "Mobile Apps — BMI Calculator App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/clearvest-investment-app.png",
+      "name": "clearvest-investment-app.png",
+      "title": "Clearvest Investment App",
+      "alt": "Mobile Apps — Clearvest Investment App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/clearvest-portfolio-screens.png",
+      "name": "clearvest-portfolio-screens.png",
+      "title": "Clearvest Portfolio Screens",
+      "alt": "Mobile Apps — Clearvest Portfolio Screens",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/clearvest-stock-details.png",
+      "name": "clearvest-stock-details.png",
+      "title": "Clearvest Stock Details",
+      "alt": "Mobile Apps — Clearvest Stock Details",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/dark-wallet-banking.png",
+      "name": "dark-wallet-banking.png",
+      "title": "Dark Wallet Banking",
+      "alt": "Mobile Apps — Dark Wallet Banking",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/ecommerce-shopping-app.png",
+      "name": "ecommerce-shopping-app.png",
+      "title": "Ecommerce Shopping App",
+      "alt": "Mobile Apps — Ecommerce Shopping App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/elearning-course-app.png",
+      "name": "elearning-course-app.png",
+      "title": "Elearning Course App",
+      "alt": "Mobile Apps — Elearning Course App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/family-donation-app.png",
+      "name": "family-donation-app.png",
+      "title": "Family Donation App",
+      "alt": "Mobile Apps — Family Donation App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/flexfunds-banking-onboarding.png",
+      "name": "flexfunds-banking-onboarding.png",
+      "title": "Flexfunds Banking Onboarding",
+      "alt": "Mobile Apps — Flexfunds Banking Onboarding",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/furniture-catalog-app.png",
+      "name": "furniture-catalog-app.png",
+      "title": "Furniture Catalog App",
+      "alt": "Mobile Apps — Furniture Catalog App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/gift-card-crypto-trading.png",
+      "name": "gift-card-crypto-trading.png",
+      "title": "Gift Card Crypto Trading",
+      "alt": "Mobile Apps — Gift Card Crypto Trading",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/gift-card-trading-dashboard.png",
+      "name": "gift-card-trading-dashboard.png",
+      "title": "Gift Card Trading Dashboard",
+      "alt": "Mobile Apps — Gift Card Trading Dashboard",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/luma-breath-awareness.png",
+      "name": "luma-breath-awareness.png",
+      "title": "Luma Breath Awareness",
+      "alt": "Mobile Apps — Luma Breath Awareness",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/luma-meditation-app.png",
+      "name": "luma-meditation-app.png",
+      "title": "Luma Meditation App",
+      "alt": "Mobile Apps — Luma Meditation App",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/lumiskin-skincare-ai.png",
+      "name": "lumiskin-skincare-ai.png",
+      "title": "Lumiskin Skincare AI",
+      "alt": "Mobile Apps — Lumiskin Skincare AI",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/luxury-furniture-shop.png",
+      "name": "luxury-furniture-shop.png",
+      "title": "Luxury Furniture Shop",
+      "alt": "Mobile Apps — Luxury Furniture Shop",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/musicly-music-player.png",
+      "name": "musicly-music-player.png",
+      "title": "Musicly Music Player",
+      "alt": "Mobile Apps — Musicly Music Player",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/nutrition-calorie-tracker.png",
+      "name": "nutrition-calorie-tracker.png",
+      "title": "Nutrition Calorie Tracker",
+      "alt": "Mobile Apps — Nutrition Calorie Tracker",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/mobile_apps/organic-grocery-delivery.png",
+      "name": "organic-grocery-delivery.png",
+      "title": "Organic Grocery Delivery",
+      "alt": "Mobile Apps — Organic Grocery Delivery",
+      "category": "mobile_apps",
+      "categoryLabel": "Mobile Apps"
+    },
+    {
+      "src": "assets/portfolio/price_plans/chainpay-crypto-pricing.png",
+      "name": "chainpay-crypto-pricing.png",
+      "title": "Chainpay Crypto Pricing",
+      "alt": "Price Plans — Chainpay Crypto Pricing",
+      "category": "price_plans",
+      "categoryLabel": "Price Plans"
+    },
+    {
+      "src": "assets/portfolio/price_plans/luminary-saas-pricing.png",
+      "name": "luminary-saas-pricing.png",
+      "title": "Luminary SaaS Pricing",
+      "alt": "Price Plans — Luminary SaaS Pricing",
+      "category": "price_plans",
+      "categoryLabel": "Price Plans"
+    }
+  ]
+}

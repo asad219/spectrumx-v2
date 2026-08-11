@@ -34,8 +34,8 @@
   <link rel="manifest" href="site.webmanifest" />
   <link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/css/style.css?v=20260810" as="style" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260810" />
+  <link rel="preload" href="assets/css/style.css?v=20260811" as="style" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260811" />
   
   <script type="application/ld+json">
 {
@@ -91,52 +91,78 @@
      ======================================== -->
 
 <section class="relative overflow-hidden border-b border-white/5 bg-[#080B11] text-white">
-  <div class="absolute inset-0 bg-[#080B11]">
-    <div class="absolute inset-0 bg-gradient-to-r from-[#080B11]/90 via-[#080B11]/55 to-transparent lg:from-[#080B11]/75 lg:via-[#080B11]/40"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/30 via-transparent to-[#080B11]/90"></div>
+  <div class="absolute inset-0">
+    <picture class="page-hero-picture">
+      <source type="image/webp" srcset="assets/images/spectrum-x-bg.webp" />
+      <img src="assets/images/spectrum-x-bg.jpg" alt="SpectrumX Technologies digital solutions background" width="1920" height="1200" class="page-hero-bg" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#080B11]/70 via-[#080B11]/90 to-[#080B11]"></div>
   </div>
   <div class="pointer-events-none absolute -left-20 top-10 h-80 w-80 rounded-full bg-cyan-500/20 blur-3xl"></div>
   <div class="pointer-events-none absolute right-0 bottom-0 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl"></div>
   <div class="site-shell page-hero-inner">
     <span class="hero-badge"><span class="hero-badge-diamond" aria-hidden="true">◆</span> Portfolio</span>
-    <div class="page-hero-heading-row mt-7 flex w-full items-center justify-between gap-4 sm:gap-6 lg:gap-10">
-      <h1 class="page-hero-heading min-w-0 flex-1 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
-        Project<br />
-        <span class="text-gradient-cyan">Portfolio</span>
-      </h1>
-      <span class="hero-icon-gradient ml-auto aspect-square w-[4.75rem] shrink-0 sm:w-24 md:w-32 lg:w-40 xl:w-48" style="-webkit-mask-image:url(assets/icons/portfolio.svg);mask-image:url(assets/icons/portfolio.svg)" aria-hidden="true"></span>
-    </div>
-    <p class="mt-6 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">Showcasing a diverse range of projects that highlight our skills in Web Designing, Web Development and Mobile App and innovative problem-solving.</p>
+    <h1 class="mt-7 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+      Project <span class="text-gradient-cyan">Portfolio</span>
+    </h1>
+    <p class="mt-6 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">Browse categorized UI work across hero sections, mobile apps, dashboards, and more—updated automatically from our portfolio library.</p>
     
   </div>
 </section>
 
+
 <!-- ========================================
      SECTION: Portfolio gallery
-     NOTE: Project image grid — edit items list in build_portfolio()
+     NOTE: Dynamic gallery — scans assets/portfolio folders via api/portfolio.php (manifest.json fallback)
      ======================================== -->
 
-<section class="section-space">
-  <div class="site-shell grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/case-khadeejahs.jpg" alt="Khadeejahs.com portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/case-hss.jpg" alt="H.S Scaffolding portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/case-diadema.jpg" alt="Diadema Travel &amp; Tourism portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/case-ssg.jpg" alt="SSG Security Solutions portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/case-webexs.jpg" alt="WebExs portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/case-ledger.jpg" alt="LedgerCorp portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/web-app.jpg" alt="Web Design portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/mobile-app.jpg" alt="Mobile App portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article><article class="group overflow-hidden rounded-[1.5rem] reveal">
-  <img src="assets/images/ecommerce.jpg" alt="eCommerce portfolio project by SpectrumX" width="800" height="800" class="aspect-square w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-</article></div>
+<section class="section-space pt-12 lg:pt-16">
+  <div class="site-shell">
+    <div class="portfolio-toolbar reveal">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="section-label !text-blue-400">Work</p>
+          <h2 class="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">Selected work by category</h2>
+        </div>
+        <p id="portfolio-count" class="text-sm text-ink-muted" aria-live="polite"></p>
+      </div>
+      <div id="portfolio-filters" class="portfolio-filters" role="toolbar" aria-label="Filter portfolio by category"></div>
+    </div>
+
+    <div id="portfolio-loading" class="portfolio-loading" aria-live="polite">
+      <div class="portfolio-loading-pulse" aria-hidden="true"></div>
+      <p class="mt-4 text-sm text-ink-muted">Loading gallery…</p>
+    </div>
+
+    <div id="portfolio-gallery" class="portfolio-gallery" aria-live="polite"></div>
+
+    <div id="portfolio-empty" class="portfolio-empty hidden" role="status">
+      <p class="font-display text-xl font-semibold text-white">No projects in this category</p>
+      <p class="mt-2 text-sm text-ink-muted">Try another filter, or add images under <code class="text-cyan-300">assets/portfolio</code>.</p>
+    </div>
+  </div>
 </section>
+
+<div id="portfolio-lightbox" class="portfolio-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Portfolio image preview">
+  <div class="portfolio-lb-backdrop" aria-hidden="true"></div>
+  <button type="button" id="portfolio-lb-close" class="portfolio-lb-close" aria-label="Close preview">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button type="button" id="portfolio-lb-prev" class="portfolio-lb-nav portfolio-lb-prev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button type="button" id="portfolio-lb-next" class="portfolio-lb-nav portfolio-lb-next" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <figure class="portfolio-lb-figure">
+    <img id="portfolio-lb-image" alt="" />
+    <figcaption class="portfolio-lb-caption">
+      <span id="portfolio-lb-cat" class="portfolio-lb-cat"></span>
+      <span id="portfolio-lb-name" class="portfolio-lb-name"></span>
+      <span id="portfolio-lb-counter" class="portfolio-lb-counter"></span>
+    </figcaption>
+  </figure>
+</div>
 
 <!-- ========================================
      SECTION: Consultation / contact form
@@ -208,7 +234,8 @@
 
 </main>
   <div id="footer-placeholder"></div>
-  <script src="assets/js/components.js?v=20260810" defer></script>
-  <script src="assets/js/main.js?v=20260810" defer></script>
+  <script src="assets/js/components.js?v=20260811" defer></script>
+  <script src="assets/js/main.js?v=20260811" defer></script>
+  <script src="assets/js/portfolio.js?v=20260811" defer></script>
 </body>
 </html>
