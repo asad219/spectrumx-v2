@@ -42,8 +42,51 @@
     });
   }
 
+  function samePage(url) {
+    return url.pathname === window.location.pathname && url.search === window.location.search;
+  }
+
+  function initPageTransitions() {
+    var html = document.documentElement;
+    html.classList.add('page-ready');
+
+    window.addEventListener('pageshow', function () {
+      html.classList.remove('is-leaving');
+      html.classList.add('page-ready');
+    });
+
+    if ('startViewTransition' in document) return;
+
+    document.addEventListener('click', function (event) {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+      var link = event.target.closest('a[href]');
+      if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+
+      var href = link.getAttribute('href');
+      if (!href || /^(mailto:|tel:|#)/i.test(href)) return;
+
+      var url;
+      try {
+        url = new URL(link.href, window.location.href);
+      } catch (err) {
+        return;
+      }
+
+      if (url.origin !== window.location.origin || samePage(url)) return;
+
+      event.preventDefault();
+      html.classList.add('is-leaving');
+      window.setTimeout(function () {
+        window.location.href = url.href;
+      }, 160);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initReveal();
     initSmoothAnchors();
+    initPageTransitions();
   });
 })();

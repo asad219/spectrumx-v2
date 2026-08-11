@@ -828,6 +828,52 @@ html.portfolio-lightbox-open {
   }
 }
 
+@keyframes page-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes page-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  ::view-transition-old(root) {
+    animation: 260ms ease-out both page-fade-out;
+  }
+
+  ::view-transition-new(root) {
+    animation: 380ms ease-out both page-fade-in;
+  }
+
+  @supports not (view-transition-name: none) {
+    html.page-ready body {
+      animation: page-enter 0.32s ease both;
+    }
+
+    html.is-leaving body {
+      opacity: 0;
+      transition: opacity 0.16s ease;
+    }
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
