@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 
 # Block tooling / source paths
-Disallow: /scripts/
 Disallow: /node_modules/
 Disallow: /package.json
 Disallow: /package-lock.json
