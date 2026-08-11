@@ -387,17 +387,27 @@
 
   /* Shared inner-page hero height (home uses .hero-panel instead) */
   .page-hero-inner {
-    @apply relative flex min-h-[28rem] flex-col items-start justify-center py-20 sm:min-h-[30rem] sm:py-24 lg:min-h-[32rem] lg:py-28;
+    @apply relative flex min-h-[28rem] flex-col items-start justify-center py-20 sm:min-h-[30rem] sm:py-24 lg:min-h-[569px] lg:py-28;
   }
 
   .page-hero-heading-row {
     @apply w-full;
   }
 
-  /* Inner-page hero art — same treatment as About (full-bleed, dimmed) */
+  /* Inner-page hero art — brighter so custom banners stay visible */
   .page-hero-bg {
-    @apply h-full w-full object-cover opacity-40;
+    @apply h-full w-full object-cover opacity-70;
     object-position: center;
+  }
+
+  .page-hero-overlay {
+    @apply absolute inset-0;
+    background: linear-gradient(
+      to bottom,
+      rgba(8, 11, 17, 0.42) 0%,
+      rgba(8, 11, 17, 0.58) 52%,
+      #080b11 100%
+    );
   }
 
   /* <picture> wrapper must fill the hero so object-cover works */
