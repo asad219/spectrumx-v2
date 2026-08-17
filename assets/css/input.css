@@ -866,3 +866,7 @@ html.portfolio-lightbox-open {
     background-image: theme('backgroundImage.hero');
   }
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
