@@ -198,6 +198,27 @@
     document.body.appendChild(link);
   }
 
+  function injectAnalytics() {
+    var measurementId = 'G-9GQ3SRZ2J9';
+    if (document.getElementById('sx-gtag')) return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () {
+      window.dataLayer.push(arguments);
+    };
+
+    var script = document.createElement('script');
+    script.id = 'sx-gtag';
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+    document.head.appendChild(script);
+
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId);
+  }
+
+  injectAnalytics();
+
   Promise.all([inject('header-placeholder', 'header.html'), inject('footer-placeholder', 'footer.html')]).then(function () {
     injectWhatsApp();
     document.dispatchEvent(new CustomEvent('components:ready'));
