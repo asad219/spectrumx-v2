@@ -212,7 +212,7 @@
     </div>
     <div class="reveal surface p-6 text-white sm:p-8" style="transition-delay:120ms">
       <h3 class="font-display text-2xl font-semibold tracking-tight">Schedule a Free Consultation</h3>
-      <form class="mt-6 grid gap-4 sm:grid-cols-2" action="#" method="post">
+      <form id="consultation-form" class="mt-6 grid gap-4 sm:grid-cols-2" action="#" method="post">
         <label class="block text-sm font-medium text-ink-muted">First name<input class="form-field mt-2" type="text" name="first_name" required /></label>
         <label class="block text-sm font-medium text-ink-muted">Last name<input class="form-field mt-2" type="text" name="last_name" required /></label>
         <label class="block text-sm font-medium text-ink-muted sm:col-span-2">Company / Organization<input class="form-field mt-2" type="text" name="company" /></label>
@@ -233,7 +233,7 @@
         </label>
         <label class="block text-sm font-medium text-ink-muted sm:col-span-2">Message<textarea class="form-field mt-2 min-h-[120px]" name="message"></textarea></label>
         <div class="sm:col-span-2">
-          <button type="submit" class="btn-primary w-full sm:w-auto">Request Consultation</button>
+          <button type="submit" class="g-recaptcha btn-primary w-full sm:w-auto" data-sitekey="6Lfi-YotAAAAAJHOSkoPslZoQuYd5js87umAfmtz" data-callback="onSubmit" data-action="submit">Request Consultation</button>
           <p class="mt-4 text-xs leading-relaxed text-ink-faint">We’ll reply within one business day. Prefer email? Write to <a class="text-cyan-400 hover:text-cyan-300" href="mailto:info@spectrumx.ltd">info@spectrumx.ltd</a>.</p>
         </div>
       </form>
@@ -243,7 +243,7 @@
 
 </main>
   <div id="footer-placeholder"></div>
-  <script src="../assets/js/components.js?v=20260817a" defer></script>
+  <script src="../assets/js/components.js?v=20260817b" defer></script>
   <script src="../assets/js/main.js?v=20260812c" defer></script>
 </body>
 </html>

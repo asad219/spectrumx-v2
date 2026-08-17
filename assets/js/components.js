@@ -217,7 +217,39 @@
     window.gtag('config', measurementId);
   }
 
+  var RECAPTCHA_SITE_KEY = '6Lfi-YotAAAAAJHOSkoPslZoQuYd5js87umAfmtz';
+
+  window.onSubmit = function (token) {
+    var form = document.getElementById('consultation-form');
+    if (!form) return;
+
+    if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+
+    var field = form.querySelector('input[name="g-recaptcha-response"]');
+    if (!field) {
+      field = document.createElement('input');
+      field.type = 'hidden';
+      field.name = 'g-recaptcha-response';
+      form.appendChild(field);
+    }
+    field.value = token;
+
+    HTMLFormElement.prototype.submit.call(form);
+  };
+
+  function injectRecaptcha() {
+    if (document.getElementById('sx-recaptcha')) return;
+    if (!document.querySelector('.g-recaptcha, #consultation-form')) return;
+
+    var script = document.createElement('script');
+    script.id = 'sx-recaptcha';
+    script.src = 'https://www.google.com/recaptcha/enterprise.js?render=' + RECAPTCHA_SITE_KEY;
+    script.async = true;
+    document.head.appendChild(script);
+  }
+
   injectAnalytics();
+  injectRecaptcha();
 
   Promise.all([inject('header-placeholder', 'header.html'), inject('footer-placeholder', 'footer.html')]).then(function () {
     injectWhatsApp();

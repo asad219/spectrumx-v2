@@ -3,3 +3,4 @@ node_modules/
 *.log
 .npm-cache/
 scripts/
+keys.txt
