@@ -364,6 +364,15 @@
     @apply bg-surface-raised text-white;
   }
 
+  select.form-field {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.85rem center;
+    background-size: 1.1rem;
+    padding-right: 2.5rem;
+  }
+
   .hero-panel {
     @apply relative isolate overflow-hidden bg-[#080B11] text-white;
     background-image:

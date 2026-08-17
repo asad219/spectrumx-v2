@@ -4,3 +4,4 @@ node_modules/
 .npm-cache/
 scripts/
 keys.txt
+config/mail.local.php

@@ -150,7 +150,7 @@ Options -MultiViews
 
 # Block source / tooling paths from public access
 <IfModule mod_rewrite.c>
-  RewriteRule ^(scripts|node_modules)(/|$) - [F,L]
+  RewriteRule ^(scripts|node_modules|config|includes)(/|$) - [F,L]
   RewriteRule ^(package\.json|package-lock\.json|tailwind\.config\.js)$ - [F,L]
 </IfModule>
 

@@ -202,29 +202,92 @@
     var measurementId = 'G-9GQ3SRZ2J9';
     if (document.getElementById('sx-gtag')) return;
 
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      window.dataLayer.push(arguments);
-    };
+    function load() {
+      if (document.getElementById('sx-gtag')) return;
 
-    var script = document.createElement('script');
-    script.id = 'sx-gtag';
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
-    document.head.appendChild(script);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
 
-    window.gtag('js', new Date());
-    window.gtag('config', measurementId);
+      var script = document.createElement('script');
+      script.id = 'sx-gtag';
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+      document.head.appendChild(script);
+
+      window.gtag('js', new Date());
+      window.gtag('config', measurementId);
+    }
+
+    if (document.readyState === 'complete') {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(load, { timeout: 4000 });
+      } else {
+        setTimeout(load, 1500);
+      }
+      return;
+    }
+
+    window.addEventListener('load', function () {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(load, { timeout: 4000 });
+      } else {
+        setTimeout(load, 1500);
+      }
+    });
   }
 
   var RECAPTCHA_SITE_KEY = '6Lfi-YotAAAAAJHOSkoPslZoQuYd5js87umAfmtz';
+  var recaptchaLoader = null;
 
-  window.onSubmit = function (token) {
-    var form = document.getElementById('consultation-form');
-    if (!form) return;
+  function consultationStatus(form, button) {
+    var status = form.querySelector('[data-contact-status]');
+    if (status) return status;
 
-    if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+    status = document.createElement('p');
+    status.setAttribute('data-contact-status', '');
+    status.className = 'mt-4 text-sm text-ink-muted';
+    if (button && button.parentNode) {
+      button.parentNode.appendChild(status);
+    } else {
+      form.appendChild(status);
+    }
+    return status;
+  }
 
+  function loadRecaptcha() {
+    if (recaptchaLoader) return recaptchaLoader;
+
+    recaptchaLoader = new Promise(function (resolve, reject) {
+      function ready() {
+        if (!(window.grecaptcha && window.grecaptcha.enterprise && typeof window.grecaptcha.enterprise.ready === 'function')) {
+          return false;
+        }
+        window.grecaptcha.enterprise.ready(resolve);
+        return true;
+      }
+
+      if (ready()) return;
+
+      var script = document.createElement('script');
+      script.id = 'sx-recaptcha';
+      script.async = true;
+      script.src = 'https://www.google.com/recaptcha/enterprise.js?render=' + encodeURIComponent(RECAPTCHA_SITE_KEY);
+      script.onload = function () {
+        if (!ready()) reject(new Error('Verification failed to start. Please try again.'));
+      };
+      script.onerror = function () {
+        recaptchaLoader = null;
+        reject(new Error('Verification failed to load. Please try again.'));
+      };
+      document.head.appendChild(script);
+    });
+
+    return recaptchaLoader;
+  }
+
+  function sendConsultation(form, token) {
     var field = form.querySelector('input[name="g-recaptcha-response"]');
     if (!field) {
       field = document.createElement('input');
@@ -234,22 +297,86 @@
     }
     field.value = token;
 
-    HTMLFormElement.prototype.submit.call(form);
-  };
+    var button = form.querySelector('button[type="submit"]');
+    var status = consultationStatus(form, button);
+    var payload = new FormData(form);
 
-  function injectRecaptcha() {
-    if (document.getElementById('sx-recaptcha')) return;
-    if (!document.querySelector('.g-recaptcha, #consultation-form')) return;
+    status.textContent = 'Sending…';
+    status.classList.remove('text-red-400', 'text-cyan-300');
 
-    var script = document.createElement('script');
-    script.id = 'sx-recaptcha';
-    script.src = 'https://www.google.com/recaptcha/enterprise.js?render=' + RECAPTCHA_SITE_KEY;
-    script.async = true;
-    document.head.appendChild(script);
+    fetch(withBase('api/contact'), {
+      method: 'POST',
+      body: payload,
+      credentials: 'same-origin',
+      headers: { Accept: 'application/json' },
+    })
+      .then(function (res) {
+        return res.json().then(function (data) {
+          return { ok: res.ok && data && data.ok, data: data };
+        });
+      })
+      .then(function (result) {
+        if (!result.ok) {
+          throw new Error((result.data && result.data.error) || 'The message could not be sent.');
+        }
+        status.classList.add('text-cyan-300');
+        status.textContent = result.data.message || 'Thanks — we received your request.';
+        form.reset();
+      })
+      .catch(function (err) {
+        status.classList.add('text-red-400');
+        status.textContent = err.message || 'The message could not be sent. Please email info@spectrumx.ltd.';
+      })
+      .then(function () {
+        form.removeAttribute('data-sending');
+        if (button) {
+          button.disabled = false;
+          button.removeAttribute('aria-busy');
+        }
+      });
+  }
+
+  function bindConsultationForm() {
+    var form = document.getElementById('consultation-form');
+    if (!form || form.getAttribute('data-recaptcha-bound')) return;
+    form.setAttribute('data-recaptcha-bound', '1');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+      if (form.getAttribute('data-sending') === '1') return;
+
+      var button = form.querySelector('button[type="submit"]');
+      var status = consultationStatus(form, button);
+      form.setAttribute('data-sending', '1');
+      if (button) {
+        button.disabled = true;
+        button.setAttribute('aria-busy', 'true');
+      }
+      status.classList.remove('text-red-400', 'text-cyan-300');
+      status.textContent = 'Verifying…';
+
+      loadRecaptcha()
+        .then(function () {
+          return window.grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, { action: 'submit' });
+        })
+        .then(function (token) {
+          sendConsultation(form, token);
+        })
+        .catch(function (err) {
+          form.removeAttribute('data-sending');
+          if (button) {
+            button.disabled = false;
+            button.removeAttribute('aria-busy');
+          }
+          status.classList.add('text-red-400');
+          status.textContent = (err && err.message) || 'Verification failed. Please try again.';
+        });
+    });
   }
 
   injectAnalytics();
-  injectRecaptcha();
+  bindConsultationForm();
 
   Promise.all([inject('header-placeholder', 'header.html'), inject('footer-placeholder', 'footer.html')]).then(function () {
     injectWhatsApp();
