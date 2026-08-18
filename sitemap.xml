@@ -38,9 +38,51 @@
   </url>
   <url>
     <loc>https://spectrumx.ltd/blog</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/why-flutter-is-the-smartest-path-to-ios-and-android-in-2026</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/flutter-vs-native-how-to-choose-without-wasting-budget</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/7-flutter-performance-habits-that-keep-apps-feeling-instant</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/from-mvp-to-app-store-a-practical-flutter-delivery-playbook</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/https-headers-and-the-website-basics-that-still-stop-attacks</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/how-to-stop-xss-csrf-and-injection-on-a-production-website</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/a-practical-website-security-checklist-before-you-go-live</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://spectrumx.ltd/blogs/4-cybersecurity-takeaways-from-chinas-largest-data-breach</loc>
