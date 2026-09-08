@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T10:13:36.463Z",
+  "generatedAt": "2026-09-08T04:45:20.462Z",
   "categories": [
     {
       "id": "cards",
@@ -241,13 +241,61 @@
     {
       "id": "landing_pages",
       "label": "Landing Pages",
-      "count": 1,
+      "count": 7,
       "items": [
+        {
+          "src": "assets/portfolio/landing_pages/calyx-yoga-wellness-landing.webp",
+          "name": "calyx-yoga-wellness-landing.webp",
+          "title": "Calyx Yoga Wellness Landing",
+          "alt": "Landing Pages — Calyx Yoga Wellness Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        },
         {
           "src": "assets/portfolio/landing_pages/finpay-fintech-landing.webp",
           "name": "finpay-fintech-landing.webp",
           "title": "Finpay Fintech Landing",
           "alt": "Landing Pages — Finpay Fintech Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        },
+        {
+          "src": "assets/portfolio/landing_pages/nova-ai-browser-landing.webp",
+          "name": "nova-ai-browser-landing.webp",
+          "title": "Nova AI Browser Landing",
+          "alt": "Landing Pages — Nova AI Browser Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        },
+        {
+          "src": "assets/portfolio/landing_pages/pley-website-platform-landing.webp",
+          "name": "pley-website-platform-landing.webp",
+          "title": "Pley Website Platform Landing",
+          "alt": "Landing Pages — Pley Website Platform Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        },
+        {
+          "src": "assets/portfolio/landing_pages/radian-exr-motorcycle-landing.webp",
+          "name": "radian-exr-motorcycle-landing.webp",
+          "title": "Radian EXR Motorcycle Landing",
+          "alt": "Landing Pages — Radian EXR Motorcycle Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        },
+        {
+          "src": "assets/portfolio/landing_pages/vcass-arts-school-landing.webp",
+          "name": "vcass-arts-school-landing.webp",
+          "title": "VCASS Arts School Landing",
+          "alt": "Landing Pages — VCASS Arts School Landing",
+          "category": "landing_pages",
+          "categoryLabel": "Landing Pages"
+        },
+        {
+          "src": "assets/portfolio/landing_pages/wellora-wellness-landing.webp",
+          "name": "wellora-wellness-landing.webp",
+          "title": "Wellora Wellness Landing",
+          "alt": "Landing Pages — Wellora Wellness Landing",
           "category": "landing_pages",
           "categoryLabel": "Landing Pages"
         }
@@ -662,10 +710,58 @@
       "categoryLabel": "Hero Sections"
     },
     {
+      "src": "assets/portfolio/landing_pages/calyx-yoga-wellness-landing.webp",
+      "name": "calyx-yoga-wellness-landing.webp",
+      "title": "Calyx Yoga Wellness Landing",
+      "alt": "Landing Pages — Calyx Yoga Wellness Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
       "src": "assets/portfolio/landing_pages/finpay-fintech-landing.webp",
       "name": "finpay-fintech-landing.webp",
       "title": "Finpay Fintech Landing",
       "alt": "Landing Pages — Finpay Fintech Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
+      "src": "assets/portfolio/landing_pages/nova-ai-browser-landing.webp",
+      "name": "nova-ai-browser-landing.webp",
+      "title": "Nova AI Browser Landing",
+      "alt": "Landing Pages — Nova AI Browser Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
+      "src": "assets/portfolio/landing_pages/pley-website-platform-landing.webp",
+      "name": "pley-website-platform-landing.webp",
+      "title": "Pley Website Platform Landing",
+      "alt": "Landing Pages — Pley Website Platform Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
+      "src": "assets/portfolio/landing_pages/radian-exr-motorcycle-landing.webp",
+      "name": "radian-exr-motorcycle-landing.webp",
+      "title": "Radian EXR Motorcycle Landing",
+      "alt": "Landing Pages — Radian EXR Motorcycle Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
+      "src": "assets/portfolio/landing_pages/vcass-arts-school-landing.webp",
+      "name": "vcass-arts-school-landing.webp",
+      "title": "VCASS Arts School Landing",
+      "alt": "Landing Pages — VCASS Arts School Landing",
+      "category": "landing_pages",
+      "categoryLabel": "Landing Pages"
+    },
+    {
+      "src": "assets/portfolio/landing_pages/wellora-wellness-landing.webp",
+      "name": "wellora-wellness-landing.webp",
+      "title": "Wellora Wellness Landing",
+      "alt": "Landing Pages — Wellora Wellness Landing",
       "category": "landing_pages",
       "categoryLabel": "Landing Pages"
     },
