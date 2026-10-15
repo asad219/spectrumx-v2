@@ -41,6 +41,7 @@
         (key === 'solutions' && path.indexOf('/solutions') !== -1) ||
         (key === 'careers' && file === 'careers') ||
         (key === 'portfolio' && file === 'portfolio') ||
+        (key === 'clients' && file === 'clients') ||
         (key === 'blog' && (file === 'blog' || path.indexOf('/blogs') !== -1));
 
       if (active) link.classList.add('is-active');
