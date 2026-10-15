@@ -38,9 +38,21 @@
   </url>
   <url>
     <loc>https://spectrumx.ltd/blog</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/ai-can-speed-up-your-seo-it-can-also-quietly-wreck-it</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spectrumx.ltd/blogs/adding-ai-to-your-web-app-treat-it-like-an-untrusted-user</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://spectrumx.ltd/blogs/most-business-websites-look-fine-and-still-dont-convert</loc>
