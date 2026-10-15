@@ -811,6 +811,73 @@ html.portfolio-lightbox-open {
   overflow: hidden;
 }
 
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: logo-marquee 45s linear infinite;
+}
+
+.logo-marquee:hover .logo-marquee-track {
+  animation-play-state: paused;
+}
+
+/* Each group must be at least as wide as the viewport, so it lists the logo set twice */
+.logo-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.logo-marquee-item {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.logo-marquee-item:hover {
+  opacity: 1;
+}
+
+.logo-marquee-item img {
+  height: calc(var(--logo-h, 32px) * 0.8);
+  width: auto;
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  .logo-marquee-group {
+    gap: 5rem;
+    padding-right: 5rem;
+  }
+
+  .logo-marquee-item img {
+    height: var(--logo-h, 32px);
+  }
+}
+
+@keyframes logo-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee-track {
+    animation-duration: 120s;
+  }
+}
+
 @keyframes portfolio-shimmer {
   0% {
     background-position: 120% 0;
