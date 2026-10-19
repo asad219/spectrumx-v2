@@ -42,7 +42,8 @@
         (key === 'careers' && file === 'careers') ||
         (key === 'portfolio' && file === 'portfolio') ||
         (key === 'clients' && file === 'clients') ||
-        (key === 'blog' && (file === 'blog' || path.indexOf('/blogs') !== -1));
+        (key === 'blog' && (file === 'blog' || path.indexOf('/blogs') !== -1)) ||
+        (key === 'contact' && file === 'contact');
 
       if (active) link.classList.add('is-active');
     });
